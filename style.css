@@ -1,0 +1,63 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+html {
+	background-color: black;
+	color: white;
+}
+a {
+	color: pink;
+}
+#frame {
+	position: relative;
+	background: lightblue;
+	background-image: url(crawl-tiles-oct-5-2010/dc-dngn/floor/dirt_full.png);
+	background-repeat: repeat-x repeat-y;
+	width: 512px;
+	height: 512px;
+	margin: 20px;
+}
+p {
+	margin-left: 20px;
+	margin-top: 1em;
+}
+#hero {
+	background-image: url(crawl-tiles-oct-5-2010/dc-mon/unique/jozef.png);
+	left: 64px;
+	top: 64px;
+}
+#hero,
+.gold,
+.wall,
+.danger {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+}
+.gold {
+	background-image: url(crawl-tiles-oct-5-2010/item/misc/gold_pile.png);
+	z-index: 10;
+}
+.wall {
+	background-image: url(crawl-tiles-oct-5-2010/dc-dngn/wall/brick_brown-vines1.png);
+}
+.danger {
+	background-image: url(crawl-tiles-oct-5-2010/dc-mon/demons/balrug.png);
+	z-index: 20;
+}
+#game-over {
+	position: absolute;
+	top: 256px;
+	left: -1000px;
+	z-index: 100;
+	font-size: 40px;
+	font-weight: bolder;
+	color: red;
+	text-shadow: -1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
+}
+
